@@ -1,4 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="18" fill="#15110f"/>
-  <text x="32" y="43" font-family="Georgia, 'Playfair Display', serif" font-size="30" font-weight="700" fill="#e8622f" text-anchor="middle">I</text>
+  <rect width="64" height="64" rx="18" fill="#140f0c"/>
+  <path d="M18 40 L32 18 L46 40 Z" fill="none" stroke="#ff5733" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="32" cy="34" r="2.6" fill="#ff5733"/>
+  <circle cx="27" cy="30" r="1.6" fill="#ff5733"/>
+  <circle cx="37" cy="29" r="1.6" fill="#ff5733"/>
 </svg>

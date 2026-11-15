@@ -1,18 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="it">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pizzeria Hamburgeria Impatto · Pizza a Nerviano</title>
-<meta name="description" content="Pizzeria e hamburgeria a Nerviano: pizza nel forno a legna, hamburger alla griglia e un menu senza glutine pensato per i celiaci. Aperti la sera, Mar–Dom.">
+<title>Pizzeria Hamburgeria L’Impatto · Pizza a Nerviano</title>
+<meta name="description" content="Pizzeria e hamburgeria a Nerviano: pizza anche senza glutine, hamburger di scottona, grigliate di carne e pesce. Aperti a cena e per l'asporto.">
 <meta name="robots" content="noindex, nofollow">
-<meta property="og:title" content="Pizzeria Hamburgeria Impatto · Pizza a Nerviano">
-<meta property="og:description" content="Pizza nel forno a legna, hamburger alla griglia e un menu senza glutine per celiaci, a Nerviano.">
-<meta name="theme-color" content="#15110f">
+<meta property="og:title" content="Pizzeria Hamburgeria L’Impatto · Nerviano">
+<meta property="og:description" content="Pizza anche senza glutine, hamburger di scottona e grigliate, a Nerviano. Aperti a cena, con asporto.">
+<meta name="theme-color" content="#140f0c">
 <link rel="icon" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&display=swap" rel="stylesheet">
 <script>document.documentElement.classList.add('js')</script>
 <link rel="stylesheet" href="base.css">
 <link rel="stylesheet" href="style.css">
@@ -20,27 +20,31 @@
 {
   "@context": "https://schema.org",
   "@type": "Restaurant",
-  "name": "Pizzeria Hamburgeria Impatto",
-  "servesCuisine": ["Pizza", "Hamburger"],
+  "name": "Pizzeria Hamburgeria L'Impatto",
+  "image": "img/foto-01.webp",
   "telephone": "+390331882239",
+  "servesCuisine": ["Pizza", "Hamburger", "Pesce alla griglia", "Carne alla griglia"],
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Via Milano 44",
+    "streetAddress": "Via Milano, 44",
     "addressLocality": "Nerviano",
     "addressRegion": "MI",
     "addressCountry": "IT"
   },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.5545922,
+    "longitude": 8.9804192
+  },
   "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-      "opens": "18:00",
-      "closes": "23:00"
-    }
-  ],
-  "sameAs": [
-    "https://www.facebook.com/p/Pizzeria-hamburgeria-LImpatto-100063727593648/",
-    "https://www.google.com/maps/place/Pizzeria+Hamburgeria+Impatto/data=!4m7!3m6!1s0x478693c7ec3fdc31:0x80f1b4ef085c2b8e!8m2!3d45.5545922!4d8.9804192!16s%2Fg%2F11fk1fb04w!19sChIJMdw_7MeThkcRjitcCO-08YA"
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "18:00", "closes": "23:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "18:00", "closes": "23:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "09:00", "closes": "17:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "18:00", "closes": "23:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "11:00", "closes": "14:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "18:00", "closes": "23:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "18:00", "closes": "23:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "18:00", "closes": "23:00" }
   ]
 }
 </script>
@@ -50,134 +54,122 @@
 
 <header class="testata">
   <div class="shell testata__riga">
-    <a class="testata__nome" href="#top">Impatto</a>
+    <a class="testata__nome" href="#top">L’Impatto</a>
     <nav class="testata__menu">
       <a href="#cucina">Cucina</a>
-      <a href="#luogo">Ambiente</a>
-      <a href="#vieni">Dove siamo</a>
+      <a href="#locale">Il locale</a>
+      <a href="#contatti">Contatti</a>
     </nav>
-    <a class="testata__azione pulsante pulsante--primario" href="tel:+390331882239">Chiama ora</a>
+    <a class="testata__azione" href="tel:+390331882239">Chiama ora</a>
   </div>
 </header>
 
 <main id="contenuto">
 
-  <section class="hero" id="top">
-    <div class="hero__sfondo">
-      <img width="1600" height="1066" src="img/foto-04.webp" alt="Pizza che cuoce nel forno a legna, con le fiamme vive sullo sfondo" loading="eager">
-    </div>
-    <div class="shell hero__corpo">
-      <p class="etichetta hero__etichetta entra">Pizzeria · Hamburgeria · Nerviano</p>
-      <h1 class="hero__titolo entra" style="--delay:120ms">Pizza da campione.<em>Ogni sera, a Nerviano.</em></h1>
-      <p class="hero__lede entra" style="--delay:220ms">Paolino Bucca cuoce pizza e hamburger in Via Milano, con un menu senza glutine pensato davvero per chi è celiaco.</p>
-      <div class="azioni entra" style="--delay:320ms">
-        <a class="pulsante pulsante--primario" href="tel:+390331882239">Chiama ora</a>
-        <a class="pulsante pulsante--secondario" href="tel:+390331882239">Prenota un tavolo</a>
+  <section class="hero" id="top" data-luce>
+    <div class="shell hero__riga">
+      <div class="hero__testo entra">
+        <span class="etichetta">Pizzeria · Hamburgeria · Nerviano</span>
+        <h1 class="hero__titolo">Pizza per tutti.<br><em>Anche senza glutine.</em></h1>
+        <p class="hero__lede">A Nerviano, tra pizze, hamburger di scottona e grigliate di carne e pesce, con un’attenzione costante a chi non può mangiare glutine.</p>
+        <div class="hero__azioni">
+          <a class="bottone bottone--pieno" href="tel:+390331882239">Chiama ora</a>
+          <a class="bottone bottone--linea" href="https://www.google.com/maps/search/?api=1&query=Via+Milano+44+Nerviano+MI">Indicazioni</a>
+        </div>
+      </div>
+      <div class="hero__riquadro reveal">
+        <img src="img/foto-01.webp" alt="Interno della pizzeria, con bancone in muratura e cucina a vista" width="1600" height="1200">
+        <span class="hero__didascalia">Il locale, Via Milano 44</span>
       </div>
     </div>
   </section>
 
-  <section class="sezione sezione--chiara" id="mestiere">
-    <div class="shell mestiere">
-      <div class="mestiere__testo">
-        <p class="etichetta sezione__etichetta reveal">Il mestiere</p>
-        <h2 class="sezione__titolo reveal">Un impasto da campione.</h2>
-        <p class="reveal" style="--delay:80ms">Paolino Bucca prepara pizza a Nerviano da pluricampione del mondo nella preparazione della pizza.</p>
-        <p class="reveal" style="--delay:160ms">Qui l’attenzione non si ferma all’impasto classico: pane, lieviti e dolci senza glutine si preparano su ordinazione, per chi non può permettersi distrazioni a tavola.</p>
-      </div>
-      <figure class="mestiere__foto reveal" style="--delay:120ms">
-        <img width="1600" height="1066" src="img/foto-03.webp" alt="Preparazione degli impasti in un laboratorio di pizzeria con forno a legna" loading="lazy">
-      </figure>
-    </div>
-  </section>
-
-  <section class="sezione" id="cucina">
+  <section class="sezione sezione-chiara" id="cucina">
     <div class="shell">
-      <p class="etichetta sezione__etichetta reveal">La cucina</p>
-      <h2 class="sezione__titolo reveal">In tavola, senza compromessi.</h2>
-      <p class="cucina__intro reveal" style="--delay:80ms">Pizza classica cotta nel forno a legna, hamburger alla griglia, e una linea intera pensata per chi è celiaco.</p>
+      <span class="etichetta">Dal forno e dalla griglia</span>
+      <h2 class="reveal">Quello che esce dal forno</h2>
+      <p class="cucina__intro">La pizza si fa anche gluten-free, pensata per chi ha la celiachia e non vuole rinunciare a nulla. Accanto, hamburger di scottona, piatti di pesce e grigliate di carne, fino al tomahawk con gnocco fritto.</p>
 
-      <div class="linea linea--viva reveal"></div>
-      <ul class="menu-parete">
+      <ul class="menu-disegnato">
         <li>
-          <span class="menu-parete__nome">Pizza</span>
-          <span class="menu-parete__nota">Nel forno a legna, ogni sera dalle 18:00.</span>
+          <div>
+            <strong>Pizza gluten-free</strong>
+            <span>Impasto dedicato per chi ha la celiachia. Dolci e pane senza glutine su ordinazione.</span>
+          </div>
+          <small>Senza glutine</small>
+        </li>
+        <li>
+          <div>
+            <strong>Hamburger di scottona</strong>
+            <span>Servito con patatine fritte.</span>
+          </div>
+          <small>Griglia</small>
+        </li>
+        <li>
+          <div>
+            <strong>Tomahawk alla griglia</strong>
+            <span>Con broccolo verde e gnocco fritto.</span>
+          </div>
+          <small>Carne</small>
+        </li>
+        <li>
+          <div>
+            <strong>Focaccia</strong>
+            <span>Cotta nello stesso forno delle pizze.</span>
+          </div>
+          <small>Forno</small>
         </li>
       </ul>
-      <div class="linea reveal" style="--delay:60ms"></div>
-      <ul class="menu-parete">
-        <li>
-          <span class="menu-parete__nome">Hamburger</span>
-          <span class="menu-parete__nota">Alla griglia, anche con pane senza glutine.</span>
-        </li>
-      </ul>
-      <div class="linea reveal" style="--delay:120ms"></div>
-      <ul class="menu-parete">
-        <li>
-          <span class="menu-parete__nome">Tomahawk con broccolo verde e gnocco fritto</span>
-          <span class="menu-parete__nota">Il piatto forte della casa.</span>
-        </li>
-      </ul>
-      <div class="linea reveal" style="--delay:180ms"></div>
-      <ul class="menu-parete">
-        <li>
-          <span class="menu-parete__nome">Dolci e pane senza glutine</span>
-          <span class="menu-parete__nota">Preparati su ordinazione, per i celiaci.</span>
-        </li>
-      </ul>
-      <div class="linea linea--fine reveal" style="--delay:240ms"></div>
 
       <div class="striscia">
-        <figure>
-          <img width="1600" height="1068" src="img/foto-01.webp" alt="Pizza appena sfornata su una pala da forno, con mozzarella filante" loading="lazy">
-        </figure>
-        <figure>
-          <img width="1600" height="1066" src="img/foto-02.webp" alt="Hamburger tagliato a metà, con carne alla griglia e verdure fresche" loading="lazy">
-        </figure>
+        <div class="striscia__carta striscia__carta--foto">
+          <img src="img/foto-02.webp" alt="Piatto di pesce alla griglia con verdure grigliate e insalata" loading="lazy" width="1008" height="756">
+        </div>
+        <div class="striscia__carta striscia__carta--colore">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><circle cx="9" cy="10" r="0.8" fill="currentColor"/><circle cx="14" cy="9" r="0.8" fill="currentColor"/><circle cx="13" cy="14" r="0.8" fill="currentColor"/></svg>
+          <strong>Pizza senza glutine</strong>
+        </div>
+        <div class="striscia__carta striscia__carta--colore">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 16 L12 4 L20 16 Z"/></svg>
+          <strong>Tomahawk</strong>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="sezione sezione--chiara" id="luogo">
+  <div class="fascia">
+    <p class="reveal">Nessuno resta fuori dal tavolo.</p>
+  </div>
+
+  <section class="sezione sezione-scura" id="locale">
     <div class="shell">
-      <p class="etichetta sezione__etichetta reveal">L’ambiente</p>
-      <h2 class="sezione__titolo reveal">Una serata che si allunga.</h2>
-      <p class="luogo__intro reveal" style="--delay:80ms">Si mangia al tavolo, si ordina da asporto o si riceve a casa con Deliveroo. Alcune sere il locale si anima con il karaoke.</p>
-      <ul class="servizi-elenco">
-        <li class="reveal"><span>Servizio al tavolo</span><span>Con prenotazione</span></li>
-        <li class="reveal" style="--delay:60ms"><span>Asporto</span><span>Da ritirare in sede</span></li>
-        <li class="reveal" style="--delay:120ms"><span>Consegna a domicilio</span><span>Con Deliveroo</span></li>
-        <li class="reveal" style="--delay:180ms"><span>Menu senza glutine</span><span>Pane, dolci e lieviti su ordinazione</span></li>
-      </ul>
+      <span class="etichetta">Le sere a Nerviano</span>
+      <h2 class="reveal">Tavoli pieni e musica dal vivo</h2>
+      <p class="luogo__corpo">Il locale è aperto a cena dal martedì alla domenica, e anche a pranzo il giovedì e il venerdì. C'è spazio per chi mangia alla carta e per chi porta a casa: la pizza e i piatti della griglia si fanno anche per l'asporto.</p>
+      <p class="luogo__corpo">Le serate si accompagnano spesso a musica dal vivo e karaoke, in un ambiente informale, con tavoli pensati anche per gruppi.</p>
     </div>
   </section>
 
-  <section class="sezione" id="vieni">
+  <section class="sezione sezione-scura" id="contatti">
     <div class="shell">
-      <p class="etichetta sezione__etichetta reveal">Vieni a trovarci</p>
-      <h2 class="sezione__titolo reveal">Il forno è acceso.<em style="color:var(--accent)"> Passa quando vuoi.</em></h2>
-      <div class="vieni__griglia">
-        <div class="scheda reveal">
-          <h3>Orari</h3>
-          <ul class="orari">
-            <li data-giorno="1"><span>Lunedì</span><span>Chiuso</span></li>
-            <li data-giorno="2 3 4 5 6 7"><span>Martedì–Domenica</span><span>18:00–23:00</span></li>
-          </ul>
-          <p class="scheda__indirizzo">Via Milano 44, Nerviano</p>
-          <p>0331 188 2239</p>
-        </div>
-        <div class="scheda scheda--invito reveal" style="--delay:100ms">
-          <div>
-            <svg class="scheda__svg" viewBox="0 0 200 90" aria-hidden="true">
-              <line x1="0" y1="45" x2="200" y2="45" stroke="var(--border)" stroke-width="2"/>
-              <line x1="100" y1="0" x2="100" y2="90" stroke="var(--border)" stroke-width="2"/>
-              <circle cx="100" cy="45" r="8" fill="var(--accent)"/>
-              <path d="M100 45 C100 20 130 15 130 15" stroke="var(--accent)" stroke-width="2" fill="none"/>
-            </svg>
-            <h3>Come arrivare</h3>
-            <p>Siamo in Via Milano 44, a Nerviano. Aperti da martedì a domenica, dalle 18:00 alle 23:00.</p>
-          </div>
-          <a class="pulsante pulsante--primario" href="https://www.google.com/maps/place/Pizzeria+Hamburgeria+Impatto/data=!4m7!3m6!1s0x478693c7ec3fdc31:0x80f1b4ef085c2b8e!8m2!3d45.5545922!4d8.9804192!16s%2Fg%2F11fk1fb04w!19sChIJMdw_7MeThkcRjitcCO-08YA" target="_blank" rel="noopener">Apri in Google Maps</a>
+      <span class="etichetta">Vieni a trovarci</span>
+      <h2 class="reveal">Ti aspettiamo, senza eccezioni</h2>
+      <p class="luogo__corpo">Il forno è acceso per tutti, in Via Milano 44 a Nerviano.</p>
+
+      <div class="contatti__griglia">
+        <ul class="orari">
+          <li data-giorno="1"><span>Lunedì</span><span>Chiuso</span></li>
+          <li data-giorno="2 3"><span>Martedì–Mercoledì</span><span>18:00–23:00</span></li>
+          <li data-giorno="4"><span>Giovedì</span><span>9:00–17:00, 18:00–23:00</span></li>
+          <li data-giorno="5"><span>Venerdì</span><span>11:00–14:00, 18:00–23:00</span></li>
+          <li data-giorno="6 7"><span>Sabato–Domenica</span><span>18:00–23:00</span></li>
+        </ul>
+
+        <div class="come-arrivare">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s7-7.2 7-12a7 7 0 1 0-14 0c0 4.8 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          <address>Via Milano, 44 · Nerviano (MI)</address>
+          <p>Telefono 0331 188 2239</p>
+          <a class="bottone bottone--pieno" href="https://www.google.com/maps/search/?api=1&query=Via+Milano+44+Nerviano+MI">Apri in Google Maps</a>
         </div>
       </div>
     </div>
@@ -188,22 +180,16 @@
 <footer class="piede">
   <div class="shell">
     <div class="piede__riga">
-      <div>
-        <p><strong style="color:var(--fg)">Pizzeria Hamburgeria Impatto</strong></p>
-        <p>Via Milano 44, Nerviano (MI)</p>
-      </div>
-      <div>
-        <p><a href="tel:+390331882239">0331 188 2239</a></p>
-        <p>© <span data-anno></span> Pizzeria Hamburgeria Impatto</p>
-      </div>
+      <span>Pizzeria Hamburgeria L’Impatto · Via Milano, 44 · Nerviano (MI)</span>
+      <span>Tel. 0331 188 2239</span>
     </div>
-    <p class="piede__nota">Anteprima di proposta per Pizzeria Hamburgeria Impatto · non è il sito ufficiale.</p>
+    <p class="piede__nota">© <span data-anno></span> · Anteprima di proposta per Pizzeria Hamburgeria L’Impatto · non è il sito ufficiale</p>
   </div>
 </footer>
 
 <nav class="cta-mobile">
-  <a class="pulsante pulsante--primario" href="tel:+390331882239">Chiama</a>
-  <a class="pulsante pulsante--secondario" href="https://www.google.com/maps/place/Pizzeria+Hamburgeria+Impatto/data=!4m7!3m6!1s0x478693c7ec3fdc31:0x80f1b4ef085c2b8e!8m2!3d45.5545922!4d8.9804192!16s%2Fg%2F11fk1fb04w!19sChIJMdw_7MeThkcRjitcCO-08YA" target="_blank" rel="noopener">Indicazioni</a>
+  <a href="tel:+390331882239">Chiama</a>
+  <a href="https://www.google.com/maps/search/?api=1&query=Via+Milano+44+Nerviano+MI">Indicazioni</a>
 </nav>
 
 <script src="script.js" defer></script>
